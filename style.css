@@ -1,0 +1,134 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+
+html {
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    position: relative;
+}
+
+.bg-img-desktop {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-img-mobile {
+    display: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+
+    /* border: 1px solid hotpink; */
+}
+
+header {
+    /* border: 1px solid magenta; */
+}
+
+.main-logo {
+    width: 150px;
+    margin: 9em 0 3em;
+}
+
+h1 {
+    font-size: 3rem;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: .5em;
+}
+
+.main-paragraph {
+    font-size: 1.2rem;
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 5em;
+
+    /* border: 1px solid black; */
+}
+
+.btn {
+    /* border: 1px solid purple; */
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 .2em 1em;
+    padding: .8em 2em;
+    border-radius: 60px;
+    box-shadow: 0px 10px 50px rgb(204, 204, 204);
+}
+
+.ios-btn {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.ios-btn:hover {
+    background-color: hsl(171, 54%, 56%);
+}
+
+.mac-btn {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.mac-btn:hover {
+    background-color: hsl(233, 44%, 67%);
+}
+
+@media screen and (max-width: 627px) {
+    .bg-img-desktop {
+        display: none;
+    }
+
+    .bg-img-mobile {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-paragraph {
+        margin-bottom: 2em;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /* border: 1px solid red; */
+    }
+
+    .btn {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .btn {
+        width: 100%;
+    }
+}
+/* End of Page One */
+/* **************************** */
+/* Page Two */
+
